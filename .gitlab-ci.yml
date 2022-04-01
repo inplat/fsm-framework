@@ -1,0 +1,29 @@
+workflow:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "api" || $CI_PIPELINE_SOURCE == "web"'
+    - if: '$CI_PIPELINE_SOURCE == "push" &&
+        $CI_COMMIT_REF_NAME !~ /^rc\// &&
+        $CI_COMMIT_TAG !~ /^prod_/ &&
+        $CI_COMMIT_MESSAGE !~ /#nobuild/'
+    - when: never
+
+stages:
+  - Check Functionality
+
+variables:
+  MIN_COVERAGE: 0
+  MIN_DIFF_COVERAGE: 60
+
+before_script:
+  - FULL_GIT_BRANCH=$(echo "${CI_COMMIT_REF_NAME}" | awk '{print tolower($0)}')
+  - GIT_BRANCH=$(echo "${FULL_GIT_BRANCH}" | sed 's@^rc/@@')
+
+Check Functionality:
+  stage: Check Functionality
+  tags: [vkpay]
+  image: golang:1.17
+  script:
+    - make build || echo "failed build"
+    - make tools || echo "failed generate tools"
+    - make lint  || echo "failed lint"
+    - make test  || echo "failed test"

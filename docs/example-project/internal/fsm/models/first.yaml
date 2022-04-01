@@ -1,0 +1,35 @@
+title: "Тестовый модель"
+
+# параметры по умолчанию, их можно перезаписывать в отдельных состояниях
+default_config:
+  # максимальное количество повторений
+  # todo: "-1" – обработать состояние единожды (при ошибке попадет в fallback failed state)
+  max_retry_count: 3
+  # минимальная задержка между обработками сообщений в очереди
+  min_retry_delay: 15s
+  # время спустя которое, транзакция считается застрявшей в текущем состоянии (кроме финальной)
+  cancellation_ttl: 30m
+
+# список состояний
+states:
+  - name: CREATED
+    description: "Начальное состояние транзакции"
+    initial: true
+    disable_fallback_state: true
+    transitions:
+      - to: SECOND
+        condition: "Все параметры были заполнены, кроме CallbackURL"
+      - to: DONE
+        condition: "Все параметры пусты"
+  - name: SECOND
+    description: ""
+    disable_fallback_state: true
+    transitions:
+      - to: ERR
+        condition: "Ошибка обращения ко внешнему сервису"
+      - to: DONE
+        condition: "Все параметры стали пусты"
+  - name: ERR
+    fail_final: true
+  - name: DONE
+    success_final: true
