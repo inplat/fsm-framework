@@ -7,9 +7,10 @@ import (
 )
 
 const (
-	modelsDir    = "internal/fsm/models"
-	previewsDir  = "internal/fsm/previews"
-	outputFsmDir = "internal/app/fsm"
+	// Эти параметры нужно изменять, чтобы указать, где будут выходные файлы модели
+	modelsDir    = "docs/example-project/internal/fsm/models"
+	previewsDir  = "docs/example-project/internal/fsm/previews"
+	outputFsmDir = "docs/example-project/internal/app/fsm"
 
 	templatesDir = "templates/*.fsm.go.tpl"
 )

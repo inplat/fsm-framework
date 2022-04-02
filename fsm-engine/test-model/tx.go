@@ -3,7 +3,7 @@ package test_model
 import (
 	"github.com/google/uuid"
 
-	"fsm-framework/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 var _ model.Tx = &testTx{}

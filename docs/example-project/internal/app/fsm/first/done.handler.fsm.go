@@ -5,7 +5,7 @@ package first
 import (
 	"context"
 
-	"fsm-framework/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 func (s *DoneStateDeclaration) EventHandler(ctx context.Context, ev *model.Event) model.State {

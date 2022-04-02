@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
-	"fsm-framework/fsm-engine/genmocks/mocks"
+	"github.com/inplat/fsm-framework.git/fsm-engine/genmocks/mocks"
 
-	fsmengine "fsm-framework/fsm-engine"
+	fsmengine "github.com/inplat/fsm-framework.git/fsm-engine"
 )
 
 // todo: разделить на отдельные тесты fsm движка

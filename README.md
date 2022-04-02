@@ -13,8 +13,8 @@
 ## Установка
 
 ```shell
-go get "github/vkpay/fsm-framework.git"
-go install "github/vkpay/fsm-framework.git/cmd/fsm-generator@latest
+go get "github.com/inplat/fsm-framework.git"
+go install "github.com/inplat/fsm-framework.git/cmd/fsm-generator@latest
 ```
 
 ## Глоссарий
@@ -115,7 +115,7 @@ package first_model
 import (
    "context"
 
-   "github/fsm-framework.git/fsm-engine/model"
+   "github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 func (s *SomeStateDeclaration) EventHandler(ctx context.Context, ev *model.Event) model.State {

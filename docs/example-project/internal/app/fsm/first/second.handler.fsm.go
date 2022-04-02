@@ -5,14 +5,9 @@ package first
 import (
 	"context"
 
-	"fsm-framework/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 func (s *SecondStateDeclaration) EventHandler(ctx context.Context, ev *model.Event) model.State {
-	err := s.Service().Foo(ev.Tx.CallbackURL())
-	if err != nil {
-		return ErrState
-	}
-
-	return DoneState
+	panic("implement first model second state event handler")
 }

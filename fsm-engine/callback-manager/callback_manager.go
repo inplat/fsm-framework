@@ -3,7 +3,7 @@ package callback_manager
 import (
 	"context"
 
-	"fsm-framework/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 type CallbackManager interface {

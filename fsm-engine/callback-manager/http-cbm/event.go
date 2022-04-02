@@ -5,7 +5,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"fsm-framework/misk/prettyuuid"
+	"github.com/inplat/fsm-framework.git/misk/prettyuuid"
 )
 
 // generateEvID создает ID по маске CABANNxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx for easy debugging

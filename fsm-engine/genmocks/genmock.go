@@ -3,13 +3,13 @@
 package genmocks
 
 import (
-	test_model "fsm-framework/fsm-engine/test-model"
+	test_model "github.com/inplat/fsm-framework.git/fsm-engine/test-model"
 
-	"fsm-framework/fsm-engine/queue"
+	"github.com/inplat/fsm-framework.git/fsm-engine/queue"
 
-	callback_manager "fsm-framework/fsm-engine/callback-manager"
-	"fsm-framework/fsm-engine/lock"
-	"fsm-framework/fsm-engine/model"
+	callback_manager "github.com/inplat/fsm-framework.git/fsm-engine/callback-manager"
+	"github.com/inplat/fsm-framework.git/fsm-engine/lock"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 type QueueBrokerMock interface {

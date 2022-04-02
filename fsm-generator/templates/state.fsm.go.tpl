@@ -5,7 +5,7 @@ package {{ .Model.Name | snake }}
 import (
     "time"
 
-    "fsm-framework/fsm-engine/model"
+    "github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 var {{ .State.Name | camel }}State model.State = &{{ .State.Name | camel }}StateDeclaration{}

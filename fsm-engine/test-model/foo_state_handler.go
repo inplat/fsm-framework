@@ -3,7 +3,7 @@ package test_model
 import (
 	"context"
 
-	"fsm-framework/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 func (f *FooStateDeclaration) EventHandler(ctx context.Context, ev *model.Event) model.State {

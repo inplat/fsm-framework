@@ -1,7 +1,7 @@
 package test_model
 
 import (
-	"fsm-framework/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 var Model model.Model = &ModelDeclaration{}

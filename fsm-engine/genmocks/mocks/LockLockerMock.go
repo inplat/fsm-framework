@@ -5,7 +5,7 @@ package mocks
 import (
 	context "context"
 
-	lock "fsm-framework/fsm-engine/lock"
+	lock "github.com/inplat/fsm-framework.git/fsm-engine/lock"
 
 	mock "github.com/stretchr/testify/mock"
 )

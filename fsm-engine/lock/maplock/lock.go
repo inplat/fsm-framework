@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"fsm-framework/fsm-engine/lock"
+	"github.com/inplat/fsm-framework.git/fsm-engine/lock"
 )
 
 type Lock struct {

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"fsm-framework/misk/prettyuuid"
+	"github.com/inplat/fsm-framework.git/misk/prettyuuid"
 
 	"github.com/google/uuid"
 )

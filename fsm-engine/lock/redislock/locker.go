@@ -9,7 +9,7 @@ import (
 	rl "github.com/bsm/redislock"
 	"github.com/go-redis/redis/v8"
 
-	"fsm-framework/fsm-engine/lock"
+	"github.com/inplat/fsm-framework.git/fsm-engine/lock"
 )
 
 const (

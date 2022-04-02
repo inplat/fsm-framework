@@ -5,7 +5,7 @@ import (
 
 	"github.com/streadway/amqp"
 
-	zlog "fsm-framework/misk/logger"
+	zlog "github.com/inplat/fsm-framework.git/misk/logger"
 )
 
 type Delivery struct {
