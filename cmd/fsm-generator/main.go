@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	fsm_generator "fsm-framework/fsm-generator"
+	fsm_generator "github.com/inplat/fsm-framework.git/fsm-generator"
 )
 
 // Генератор кода fsm моделей

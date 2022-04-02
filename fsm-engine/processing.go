@@ -7,11 +7,11 @@ import (
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/log"
 
-	callback_manager "fsm-framework/fsm-engine/callback-manager"
-	"fsm-framework/fsm-engine/lock"
-	"fsm-framework/fsm-engine/model"
-	"fsm-framework/fsm-engine/queue"
-	zlog "fsm-framework/misk/logger"
+	callback_manager "github.com/inplat/fsm-framework.git/fsm-engine/callback-manager"
+	"github.com/inplat/fsm-framework.git/fsm-engine/lock"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/fsm-engine/queue"
+	zlog "github.com/inplat/fsm-framework.git/misk/logger"
 )
 
 type pipelineConfig struct {

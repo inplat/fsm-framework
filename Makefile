@@ -4,7 +4,7 @@ LOCATION = $(shell pwd)
 FLAGS = -tags 'osusergo netgo static_build'
 OS = $(shell uname -nsm)
 BUILD_COMMIT = $(shell git log --format="%H" -n 1)
-LDFLAGS = "-X 'main.BuildTime=$(NOW)' -X 'main.BuildOSUname=$(OS)' -X 'main.BuildCommit=$(BUILD_COMMIT)'
+LDFLAGS = "-X 'main.BuildTime=$(NOW)' -X 'main.BuildOSUname=$(OS)' -X 'main.BuildCommit=$(BUILD_COMMIT)'"
 
 ifndef $(GOPATH)
     GOPATH=$(shell go env GOPATH)

@@ -13,10 +13,10 @@ import (
 
 	zlog "github.com/rs/zerolog"
 
-	callback_manager "fsm-framework/fsm-engine/callback-manager"
-	"fsm-framework/fsm-engine/lock"
-	"fsm-framework/fsm-engine/model"
-	"fsm-framework/fsm-engine/queue"
+	callback_manager "github.com/inplat/fsm-framework.git/fsm-engine/callback-manager"
+	"github.com/inplat/fsm-framework.git/fsm-engine/lock"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/fsm-engine/queue"
 )
 
 // Engine Машина состояний отвечает за переход транзакции между состояниями, работу с очередью и локами

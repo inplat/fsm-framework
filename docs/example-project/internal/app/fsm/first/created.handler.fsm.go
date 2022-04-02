@@ -5,15 +5,9 @@ package first
 import (
 	"context"
 
-	"github.com/google/uuid"
-
-	"fsm-framework/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 func (s *CreatedStateDeclaration) EventHandler(ctx context.Context, ev *model.Event) model.State {
-	if ev.Tx.ID() == uuid.Nil {
-		return DoneState
-	}
-
-	return ErrState
+	panic("implement first model created state event handler")
 }

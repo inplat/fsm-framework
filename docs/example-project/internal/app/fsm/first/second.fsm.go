@@ -4,7 +4,7 @@ package first
 import (
 	"time"
 
-	"fsm-framework/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 var SecondState model.State = &SecondStateDeclaration{}

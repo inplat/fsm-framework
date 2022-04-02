@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	"fsm-framework/fsm-engine/queue"
-	zlog "fsm-framework/misk/logger"
+	"github.com/inplat/fsm-framework.git/fsm-engine/queue"
+	zlog "github.com/inplat/fsm-framework.git/misk/logger"
 )
 
 // pushToQueue добавляет новую задачу отправки обратного вызова

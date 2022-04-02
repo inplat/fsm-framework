@@ -10,8 +10,8 @@ import (
 	"github.com/streadway/amqp"
 	"go.uber.org/atomic"
 
-	"fsm-framework/fsm-engine/queue"
-	zlog "fsm-framework/misk/logger"
+	"github.com/inplat/fsm-framework.git/fsm-engine/queue"
+	zlog "github.com/inplat/fsm-framework.git/misk/logger"
 )
 
 var ErrConsumerExists = errors.New("consumer already exists")

@@ -5,7 +5,7 @@ import (
 	"errors"
 	"sync"
 
-	"fsm-framework/fsm-engine/lock"
+	"github.com/inplat/fsm-framework.git/fsm-engine/lock"
 )
 
 var (

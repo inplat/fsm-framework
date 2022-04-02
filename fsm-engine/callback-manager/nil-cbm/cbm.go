@@ -3,7 +3,7 @@ package nil_cbm
 import (
 	"context"
 
-	"fsm-framework/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 func New() *NilCallbackManger {

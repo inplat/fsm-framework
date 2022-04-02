@@ -6,7 +6,7 @@ package {{ .Model.Name | snake }}
 import (
     "context"
 
-    "fsm-framework/fsm-engine/model"
+    "github.com/inplat/fsm-framework.git/fsm-engine/model"
 )
 
 func (s *{{ .State.Name | camel }}StateDeclaration) EventHandler(ctx context.Context, ev *model.Event) model.State {

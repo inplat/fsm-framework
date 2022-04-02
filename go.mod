@@ -1,4 +1,4 @@
-module fsm-framework
+module github.com/inplat/fsm-framework.git
 
 go 1.17
 

@@ -3,9 +3,9 @@ package fsmengine
 import (
 	"context"
 
-	"fsm-framework/fsm-engine/model"
-	"fsm-framework/fsm-engine/queue"
-	zlog "fsm-framework/misk/logger"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/fsm-engine/queue"
+	zlog "github.com/inplat/fsm-framework.git/misk/logger"
 )
 
 type StateProcessor struct {

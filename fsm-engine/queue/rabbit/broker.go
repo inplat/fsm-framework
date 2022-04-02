@@ -9,8 +9,8 @@ import (
 	"github.com/isayme/go-amqp-reconnect/rabbitmq"
 	"github.com/streadway/amqp"
 
-	"fsm-framework/fsm-engine/queue"
-	zlog "fsm-framework/misk/logger"
+	"github.com/inplat/fsm-framework.git/fsm-engine/queue"
+	zlog "github.com/inplat/fsm-framework.git/misk/logger"
 )
 
 // channelPerConn кол-во каналов которые могут работать на одном соединении

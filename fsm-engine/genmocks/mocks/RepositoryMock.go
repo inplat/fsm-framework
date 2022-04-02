@@ -7,7 +7,7 @@ import (
 
 	mock "github.com/stretchr/testify/mock"
 
-	model "fsm-framework/fsm-engine/model"
+	model "github.com/inplat/fsm-framework.git/fsm-engine/model"
 
 	uuid "github.com/google/uuid"
 )

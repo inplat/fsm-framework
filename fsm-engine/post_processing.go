@@ -7,9 +7,9 @@ import (
 	"github.com/opentracing/opentracing-go"
 	"github.com/opentracing/opentracing-go/log"
 
-	"fsm-framework/fsm-engine/model"
-	"fsm-framework/misk/caller"
-	zlog "fsm-framework/misk/logger"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/misk/caller"
+	zlog "github.com/inplat/fsm-framework.git/misk/logger"
 )
 
 // resolveNextState должна выяснить какое состояние должно стать следующим

@@ -5,7 +5,7 @@ import (
 
 	rl "github.com/bsm/redislock"
 
-	"fsm-framework/fsm-engine/lock"
+	"github.com/inplat/fsm-framework.git/fsm-engine/lock"
 )
 
 type Lock struct {

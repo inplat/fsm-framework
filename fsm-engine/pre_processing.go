@@ -11,9 +11,9 @@ import (
 	"github.com/opentracing/opentracing-go/log"
 	"github.com/uber/jaeger-client-go"
 
-	"fsm-framework/fsm-engine/model"
-	"fsm-framework/misk/caller"
-	zlog "fsm-framework/misk/logger"
+	"github.com/inplat/fsm-framework.git/fsm-engine/model"
+	"github.com/inplat/fsm-framework.git/misk/caller"
+	zlog "github.com/inplat/fsm-framework.git/misk/logger"
 )
 
 const (
